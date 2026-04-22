@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trippy | Trip Room</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="trip">
+  <header class="site-header">
+    <div class="brand-lockup">
+      <a class="brand-link" href="index.html">
+        <img class="brand-logo" src="trippy_logo.png" alt="Trippy logo">
+        <span class="brand-word">TRIPPY</span>
+      </a>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav"></nav>
+  </header>
+
+  <main class="app-main">
+    <section class="app-hero">
+      <div>
+        <p class="eyebrow">Private coordination</p>
+        <h1>Move your match into a shared trip room.</h1>
+        <p>Use the room to confirm people, decide how to travel, and keep the final coordination private.</p>
+      </div>
+      <div id="transport-status" class="status-chip">Mode not selected</div>
+    </section>
+
+    <section class="trip-layout">
+      <div class="panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Selected group</p>
+            <h2>Your travel partners</h2>
+          </div>
+        </div>
+        <div id="trip-group" class="group-stack"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Transport options</p>
+            <h2>Choose how to move</h2>
+          </div>
+        </div>
+        <div class="transport-options">
+          <button class="transport-button" type="button" data-mode="Uber">Uber</button>
+          <button class="transport-button" type="button" data-mode="Lyft">Lyft</button>
+          <button class="transport-button" type="button" data-mode="Bus">Bus</button>
+          <button class="transport-button" type="button" data-mode="Walk">Walk</button>
+        </div>
+        <div id="transport-detail" class="transport-detail"></div>
+      </div>
+
+      <div class="panel chat-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Private room</p>
+            <h2>Trip chat</h2>
+          </div>
+        </div>
+        <div id="chat-log" class="chat-log"></div>
+        <form id="chat-form" class="chat-form">
+          <input id="chat-input" type="text" placeholder="Send a message to the group" required>
+          <button class="button button-primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Transport actions show prototype next steps instead of calling live APIs.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

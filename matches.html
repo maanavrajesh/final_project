@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trippy | Matches</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="matches">
+  <header class="site-header">
+    <div class="brand-lockup">
+      <a class="brand-link" href="index.html">
+        <img class="brand-logo" src="trippy_logo.png" alt="Trippy logo">
+        <span class="brand-word">TRIPPY</span>
+      </a>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav"></nav>
+  </header>
+
+  <main class="app-main">
+    <section class="app-hero">
+      <div>
+        <p class="eyebrow">Matching engine</p>
+        <h1>Find nearby people with a similar route and comfort level.</h1>
+        <p>Filter by social preferences, travel mode, and vibe before you start a shared trip.</p>
+      </div>
+      <a class="button button-secondary" href="dashboard.html">Update request</a>
+    </section>
+
+    <section class="matches-layout">
+      <aside class="panel filters-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Filters</p>
+            <h2>Refine your group</h2>
+          </div>
+        </div>
+        <form id="filters-form" class="filter-stack">
+          <label>
+            Visibility
+            <select name="visibility">
+              <option value="All">All</option>
+              <option value="Friends">Friends</option>
+              <option value="School">School</option>
+              <option value="Everyone">Everyone</option>
+            </select>
+          </label>
+          <label>
+            Preferred mode
+            <select name="travelMode">
+              <option value="All">All</option>
+              <option value="Walk">Walk</option>
+              <option value="Bus">Bus</option>
+              <option value="Uber">Uber</option>
+              <option value="Lyft">Lyft</option>
+              <option value="Flexible">Flexible</option>
+            </select>
+          </label>
+          <label>
+            Year
+            <select name="year">
+              <option value="All">All</option>
+              <option value="First Year">First Year</option>
+              <option value="Sophomore">Sophomore</option>
+              <option value="Junior">Junior</option>
+              <option value="Senior">Senior</option>
+              <option value="Graduate">Graduate</option>
+            </select>
+          </label>
+          <label>
+            Gender
+            <select name="gender">
+              <option value="All">All</option>
+              <option value="Woman">Woman</option>
+              <option value="Man">Man</option>
+              <option value="Non-binary">Non-binary</option>
+            </select>
+          </label>
+          <label>
+            Vibe keyword
+            <input name="keyword" type="text" placeholder="quiet, upbeat, quick">
+          </label>
+          <div class="form-actions form-actions-compact">
+            <button class="button button-primary" type="submit">Apply filters</button>
+            <button id="reset-filters" class="button button-secondary" type="button">Reset</button>
+          </div>
+        </form>
+      </aside>
+
+      <section class="panel results-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Available matches</p>
+            <h2>Potential travel partners</h2>
+          </div>
+          <button id="start-trip-button" class="button button-primary" type="button">Start trip room</button>
+        </div>
+        <div id="request-banner" class="request-banner"></div>
+        <div id="matches-list" class="matches-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>These seeded student profiles simulate matching without a live backend.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

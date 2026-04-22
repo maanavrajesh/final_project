@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trippy | Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="signup">
+  <header class="site-header">
+    <div class="brand-lockup">
+      <a class="brand-link" href="index.html">
+        <img class="brand-logo" src="trippy_logo.png" alt="Trippy logo">
+        <span class="brand-word">TRIPPY</span>
+      </a>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation">Menu</button>
+    <nav class="site-nav"></nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero page-hero-tight">
+      <p class="eyebrow">Profile onboarding</p>
+      <h1>Set your travel profile before you request a trip.</h1>
+      <p>Trippy uses your school context, social comfort level, and travel preferences to generate better matches.</p>
+    </section>
+
+    <section class="form-layout">
+      <form id="signup-form" class="panel form-panel">
+        <div class="field-grid">
+          <label>
+            Name
+            <input name="name" type="text" placeholder="Your name" required>
+          </label>
+          <label>
+            School ID
+            <input name="schoolId" type="text" placeholder="School ID" required>
+          </label>
+          <label>
+            School
+            <input name="school" type="text" placeholder="University or school" required>
+          </label>
+          <label>
+            Year
+            <select name="year" required>
+              <option value="First Year">First Year</option>
+              <option value="Sophomore">Sophomore</option>
+              <option value="Junior">Junior</option>
+              <option value="Senior">Senior</option>
+              <option value="Graduate">Graduate</option>
+            </select>
+          </label>
+          <label>
+            Gender
+            <select name="gender" required>
+              <option value="Woman">Woman</option>
+              <option value="Man">Man</option>
+              <option value="Non-binary">Non-binary</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+          </label>
+          <label>
+            Instagram
+            <input name="instagram" type="text" placeholder="@handle">
+          </label>
+          <label>
+            Default visibility
+            <select name="visibility" required>
+              <option value="School">School</option>
+              <option value="Friends">Friends</option>
+              <option value="Everyone">Everyone</option>
+            </select>
+          </label>
+          <label>
+            Preferred travel mode
+            <select name="travelMode" required>
+              <option value="Walk">Walk</option>
+              <option value="Bus">Bus</option>
+              <option value="Uber">Uber</option>
+              <option value="Lyft">Lyft</option>
+              <option value="Flexible">Flexible</option>
+            </select>
+          </label>
+          <label>
+            Match preference
+            <select name="matchPreference" required>
+              <option value="Any">Any</option>
+              <option value="Women only">Women only</option>
+              <option value="Men only">Men only</option>
+              <option value="Non-binary only">Non-binary only</option>
+            </select>
+          </label>
+          <label class="field-wide">
+            Travel vibe
+            <input name="vibe" type="text" placeholder="Calm, talkative, quick walk, music, etc." required>
+          </label>
+          <label class="field-wide">
+            Short bio
+            <textarea name="bio" rows="4" placeholder="What should people know before they match with you?" required></textarea>
+          </label>
+        </div>
+        <div class="form-actions">
+          <button class="button button-primary" type="submit">Save profile and continue</button>
+          <a class="button button-secondary" href="dashboard.html">Continue with demo data</a>
+        </div>
+      </form>
+
+      <aside class="panel sidebar-panel">
+        <p class="eyebrow">Why these fields matter</p>
+        <div class="info-stack">
+          <div>
+            <h3>Trust before transit</h3>
+            <p>School verification and visible identity cues reduce uncertainty before students commit to a trip.</p>
+          </div>
+          <div>
+            <h3>Social comfort settings</h3>
+            <p>Students can decide if they want to coordinate with friends only, school peers, or a broader network.</p>
+          </div>
+          <div>
+            <h3>Real travel options</h3>
+            <p>Trippy supports ride share, bus, and walk coordination because student travel needs are mixed.</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Profile data is stored locally in this prototype to simulate onboarding without a backend.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
