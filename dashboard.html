@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trippy | Dashboard</title>
+  <title>Trippy | Demo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body data-page="dashboard">
@@ -25,19 +25,30 @@
         <h1>Tell Trippy when you want to leave.</h1>
         <p>Create a live request, choose who can see it, and move straight into matching.</p>
       </div>
-      <div class="status-chip">Prototype state saved locally</div>
     </section>
 
     <section class="dashboard-grid">
-      <div class="panel">
-        <div class="panel-heading">
-          <div>
-            <p class="eyebrow">Your profile</p>
-            <h2 id="profile-name">Student profile</h2>
+      <div class="dashboard-left-col">
+        <div class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Your profile</p>
+              <h2 id="profile-name">Student profile</h2>
+            </div>
+            <a class="text-link" href="signup.html">Edit profile</a>
           </div>
-          <a class="text-link" href="signup.html">Edit profile</a>
+          <div id="profile-summary" class="summary-grid"></div>
         </div>
-        <div id="profile-summary" class="summary-grid"></div>
+
+        <div class="panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Active request</p>
+              <h2>Current trip signal</h2>
+            </div>
+          </div>
+          <div id="active-trip-summary" class="summary-grid"></div>
+        </div>
       </div>
 
       <form id="trip-form" class="panel">
@@ -102,31 +113,6 @@
           <button id="demo-trip-fill" class="button button-secondary" type="button">Load sample request</button>
         </div>
       </form>
-    </section>
-
-    <section class="dashboard-grid dashboard-grid-secondary">
-      <div class="panel">
-        <div class="panel-heading">
-          <div>
-            <p class="eyebrow">Active request</p>
-            <h2>Current trip signal</h2>
-          </div>
-        </div>
-        <div id="active-trip-summary" class="summary-grid"></div>
-      </div>
-      <div class="panel">
-        <div class="panel-heading">
-          <div>
-            <p class="eyebrow">Product promise</p>
-            <h2>Why this flow matters</h2>
-          </div>
-        </div>
-        <ul class="bullet-list">
-          <li>Reduces the friction of asking around when you are ready to leave.</li>
-          <li>Improves perceived safety through familiar identities and controlled visibility.</li>
-          <li>Supports multiple transport modes instead of assuming every student wants a ride share.</li>
-        </ul>
-      </div>
     </section>
   </main>
 

@@ -10,107 +10,107 @@ const STORAGE_KEYS = {
 const SEEDED_MATCHES = [
   {
     id: "m1",
-    name: "Ava",
-    school: "Purdue",
-    year: "Junior",
-    gender: "Woman",
-    visibility: "School",
-    travelMode: "Walk",
-    vibe: "quiet walk",
-    instagram: "@avagoesout",
-    bio: "Leaving after studio. Prefer a calm walk with one or two people, no rush.",
-    destination: "North Campus"
-  },
-  {
-    id: "m2",
-    name: "Miles",
-    school: "IU Indianapolis",
-    year: "Senior",
+    name: "Prof Q",
+    school: "Carnegie Mellon",
+    year: "Graduate",
     gender: "Man",
-    visibility: "Everyone",
+    visibility: "School",
     travelMode: "Uber",
-    vibe: "fast split",
-    instagram: "@milesmoves",
-    bio: "Splitting an Uber downtown before surge hits. Happy to add one or two more.",
+    vibe: "efficient, no detours",
+    instagram: "@profq",
+    bio: "Heading out after office hours. Splitting an Uber if anyone is going the same direction.",
     destination: "Downtown"
   },
   {
-    id: "m3",
-    name: "Nia",
-    school: "Purdue",
-    year: "Sophomore",
+    id: "m2",
+    name: "Prof N",
+    school: "Carnegie Mellon",
+    year: "Graduate",
     gender: "Woman",
-    visibility: "Friends",
+    visibility: "School",
+    travelMode: "Flexible",
+    vibe: "calm, coordinated",
+    instagram: "@profn",
+    bio: "Open to ride share or bus depending on who is heading the same way after class.",
+    destination: "North Campus"
+  },
+  {
+    id: "m3",
+    name: "Jorge",
+    school: "Carnegie Mellon",
+    year: "Graduate",
+    gender: "Man",
+    visibility: "School",
     travelMode: "Bus",
-    vibe: "music and bus",
-    instagram: "@niaroute",
-    bio: "Bus all the way. Looking for classmates or mutuals heading the same direction.",
+    vibe: "easygoing",
+    instagram: "@jorge.ta",
+    bio: "Taking the bus after section. Happy to coordinate with students heading the same direction.",
     destination: "West Side"
   },
   {
     id: "m4",
-    name: "Eli",
-    school: "Notre Dame",
-    year: "Graduate",
-    gender: "Non-binary",
-    visibility: "School",
-    travelMode: "Flexible",
-    vibe: "easygoing",
-    instagram: "@elihere",
-    bio: "Visiting for a conference this week. Open to walking or ride share, no preference.",
-    destination: "North Campus"
+    name: "Yari",
+    school: "Carnegie Mellon",
+    year: "Senior",
+    gender: "Woman",
+    visibility: "Everyone",
+    travelMode: "Lyft",
+    vibe: "talkative, friendly",
+    instagram: "@yari.ta",
+    bio: "Splitting a Lyft after TA hours. Always down to coordinate with classmates.",
+    destination: "Downtown"
   },
   {
     id: "m5",
-    name: "Sofia",
-    school: "Butler University",
-    year: "First Year",
-    gender: "Woman",
-    visibility: "Everyone",
-    travelMode: "Lyft",
-    vibe: "talkative",
-    instagram: "@sofiastudies",
-    bio: "New to the area and looking for a reliable ride back after club meetings. Happy to chat.",
-    destination: "Downtown"
-  },
-  {
-    id: "m6",
-    name: "Derek",
-    school: "IU Indianapolis",
+    name: "Tommy",
+    school: "Carnegie Mellon",
     year: "Junior",
     gender: "Man",
     visibility: "Everyone",
-    travelMode: "Walk",
-    vibe: "quick walk",
-    instagram: "@derekonfoot",
-    bio: "Heading out now. Short direct walk, no detours. Good if you move fast.",
-    destination: "West Side"
+    travelMode: "Flexible",
+    vibe: "chill, flexible",
+    instagram: "@tommy.trippy",
+    bio: "Open to walking or ride share depending on the group. Easy to coordinate with.",
+    destination: "North Campus"
+  },
+  {
+    id: "m6",
+    name: "Maanav",
+    school: "Carnegie Mellon",
+    year: "Junior",
+    gender: "Man",
+    visibility: "School",
+    travelMode: "Uber",
+    vibe: "fast split",
+    instagram: "@maanav.r",
+    bio: "Splitting an Uber after late class. Happy to add one or two more if heading the same way.",
+    destination: "Downtown"
   },
   {
     id: "m7",
-    name: "Priya",
-    school: "Purdue",
-    year: "Senior",
-    gender: "Woman",
+    name: "Jorden",
+    school: "Carnegie Mellon",
+    year: "Junior",
+    gender: "Non-binary",
     visibility: "School",
-    travelMode: "Bus",
-    vibe: "calm, headphones in",
-    instagram: "@priyarides",
-    bio: "Taking the bus back to Chauncey. Fine sharing a stop, not big on conversation.",
-    destination: "West Lafayette"
+    travelMode: "Walk",
+    vibe: "quiet walk",
+    instagram: "@jorden.ux",
+    bio: "Prefers a calm walk with a small group. Leaving after studio, no rush.",
+    destination: "West Side"
   },
   {
     id: "m8",
-    name: "Jordan",
-    school: "Ball State",
+    name: "Yash",
+    school: "Carnegie Mellon",
     year: "Sophomore",
-    gender: "Non-binary",
+    gender: "Man",
     visibility: "Everyone",
-    travelMode: "Lyft",
-    vibe: "chill, flexible",
-    instagram: "@jordanwherever",
-    bio: "In town visiting a friend. Splitting a Lyft toward downtown if anyone is heading that way.",
-    destination: "Downtown"
+    travelMode: "Bus",
+    vibe: "music and bus",
+    instagram: "@yash.trippy",
+    bio: "Bus all the way. Looking for classmates heading the same direction.",
+    destination: "North Campus"
   }
 ];
 
@@ -148,9 +148,7 @@ const DEFAULT_FILTERS = {
 
 const NAV_ITEMS = [
   { key: "home", label: "Home", href: "index.html" },
-  { key: "signup", label: "Start", href: "signup.html" },
-  { key: "dashboard", label: "Dashboard", href: "dashboard.html" },
-  { key: "matches", label: "Matches", href: "matches.html" },
+  { key: "dashboard", label: "Demo", href: "dashboard.html" },
   { key: "about", label: "Problem", href: "about.html" },
   { key: "strategy", label: "Strategy", href: "strategy.html" },
   { key: "impact", label: "Impact", href: "impact.html" },
@@ -482,6 +480,52 @@ function setupTrip() {
   });
 }
 
+function initCityMap() {
+  const map = document.getElementById("city-map");
+  if (!map) return;
+
+  const tooltip  = document.getElementById("map-tooltip");
+  const ttName   = document.getElementById("tt-name");
+  const ttDest   = document.getElementById("tt-dest");
+  const ttLeaving= document.getElementById("tt-leaving");
+  const ttMode   = document.getElementById("tt-mode");
+  const container= map.closest(".hero-map");
+
+  const people = [
+    { name: "Prof Q",  dest: "Downtown",     leaving: "Leaving in 30 min", mode: "Uber"     },
+    { name: "Prof N",  dest: "Oakland",      leaving: "Leaving in 10 min", mode: "Flexible"  },
+    { name: "Jorge",   dest: "CMU",          leaving: "Leaving now",       mode: "Walk"      },
+    { name: "Yari",    dest: "Shadyside",    leaving: "Leaving in 20 min", mode: "Lyft"      },
+    { name: "Tommy",   dest: "Oakland",      leaving: "Leaving in 10 min", mode: "Walk"      },
+    { name: "Maanav",  dest: "Downtown",     leaving: "Leaving now",       mode: "Uber"      },
+    { name: "Jorden",  dest: "Shadyside",    leaving: "Leaving in 20 min", mode: "Bus"       },
+    { name: "Yash",    dest: "North Campus", leaving: "Leaving now",       mode: "Bus"       },
+  ];
+
+  document.querySelectorAll(".map-dot").forEach(dot => {
+    dot.addEventListener("mouseenter", () => {
+      const p      = people[parseInt(dot.dataset.person)];
+      const core   = dot.querySelector(".map-dot-core");
+      const cRect  = core.getBoundingClientRect();
+      const bRect  = container.getBoundingClientRect();
+
+      ttName.textContent    = p.name;
+      ttDest.textContent    = "→ " + p.dest;
+      ttLeaving.textContent = p.leaving;
+      ttMode.textContent    = p.mode;
+
+      const left = cRect.left - bRect.left + cRect.width / 2;
+      const top  = cRect.top  - bRect.top;
+      tooltip.style.left      = left + "px";
+      tooltip.style.top       = top  + "px";
+      tooltip.style.transform = "translate(-50%, calc(-100% - 10px))";
+      tooltip.classList.add("visible");
+    });
+
+    dot.addEventListener("mouseleave", () => tooltip.classList.remove("visible"));
+  });
+}
+
 function init() {
   ensureSeedState();
   setupNav();
@@ -489,6 +533,7 @@ function init() {
   setupDashboard();
   setupMatches();
   setupTrip();
+  initCityMap();
 }
 
 document.addEventListener("DOMContentLoaded", init);
