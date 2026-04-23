@@ -13,7 +13,7 @@ const SEEDED_MATCHES = [
     name: "Prof Q",
     school: "Carnegie Mellon",
     year: "Graduate",
-    gender: "Man",
+    gender: "Woman",
     visibility: "School",
     travelMode: "Uber",
     vibe: "efficient, no detours",
