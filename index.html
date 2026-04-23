@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trippy | Travel Together</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body data-page="home">
   <header class="site-header">
@@ -46,7 +46,7 @@
             <div class="map-tooltip-row" id="tt-leaving"></div>
             <div class="map-tooltip-mode" id="tt-mode"></div>
           </div>
-          <svg class="city-map" viewBox="0 0 520 500" fill="none" xmlns="http://www.w3.org/2000/svg" id="city-map">
+          <svg class="city-map" viewBox="0 0 520 500" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="city-map">
             <defs>
               <path id="vp-h280"  d="M 40 280 L 480 280"/>
               <path id="vp-v280u" d="M 280 480 L 280 40"/>
@@ -82,23 +82,23 @@
             <!-- Vehicles -->
             <g class="map-vehicle">
               <rect x="-7" y="-3.5" width="14" height="7" rx="1.5"/>
-              <animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath href="#vp-h280"/></animateMotion>
+              <animateMotion dur="9s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#vp-h280"/></animateMotion>
             </g>
             <g class="map-vehicle">
               <rect x="-7" y="-3.5" width="14" height="7" rx="1.5"/>
-              <animateMotion dur="12s" repeatCount="indefinite" begin="-4s" rotate="auto"><mpath href="#vp-v280u"/></animateMotion>
+              <animateMotion dur="12s" repeatCount="indefinite" begin="-4s" rotate="auto"><mpath xlink:href="#vp-v280u"/></animateMotion>
             </g>
             <g class="map-vehicle">
               <rect x="-7" y="-3.5" width="14" height="7" rx="1.5"/>
-              <animateMotion dur="10s" repeatCount="indefinite" begin="-7s" rotate="auto"><mpath href="#vp-h180l"/></animateMotion>
+              <animateMotion dur="10s" repeatCount="indefinite" begin="-7s" rotate="auto"><mpath xlink:href="#vp-h180l"/></animateMotion>
             </g>
             <g class="map-vehicle-bus">
               <rect x="-11" y="-4.5" width="22" height="9" rx="1.5"/>
-              <animateMotion dur="18s" repeatCount="indefinite" begin="-9s" rotate="auto"><mpath href="#vp-h380"/></animateMotion>
+              <animateMotion dur="18s" repeatCount="indefinite" begin="-9s" rotate="auto"><mpath xlink:href="#vp-h380"/></animateMotion>
             </g>
             <g class="map-vehicle-bus">
               <rect x="-11" y="-4.5" width="22" height="9" rx="1.5"/>
-              <animateMotion dur="15s" repeatCount="indefinite" begin="-5s" rotate="auto"><mpath href="#vp-v180d"/></animateMotion>
+              <animateMotion dur="15s" repeatCount="indefinite" begin="-5s" rotate="auto"><mpath xlink:href="#vp-v180d"/></animateMotion>
             </g>
 
             <!-- Person dots -->
@@ -193,6 +193,6 @@
     <p>Trippy is a static product prototype for safer, more social student travel coordination.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
