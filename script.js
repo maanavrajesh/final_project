@@ -91,7 +91,7 @@ const SEEDED_MATCHES = [
     name: "Jorden",
     school: "Carnegie Mellon",
     year: "Junior",
-    gender: "Non-binary",
+    gender: "",
     visibility: "School",
     travelMode: "Walk",
     vibe: "quiet walk",
