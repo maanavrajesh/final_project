@@ -345,7 +345,7 @@ function renderMatches() {
           </label>
         </div>
         <div class="match-tag-row">
-          <span class="tag">${escapeHtml(match.gender)}</span>
+          ${match.gender ? `<span class="tag">${escapeHtml(match.gender)}</span>` : ""}
           <span class="tag">${escapeHtml(match.travelMode)}</span>
           <span class="tag">${escapeHtml(match.visibility)}</span>
           <span class="tag">${escapeHtml(match.destination)}</span>
